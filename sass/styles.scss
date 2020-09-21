@@ -1,0 +1,45 @@
+@import 'login','register','header','home','product','transferModal';
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+* :focus {
+  outline: none !important;
+}
+
+input {
+  border-radius: unset;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.disclaimer {
+  font-size: 12px;
+  text-align: center;
+  bottom: 24px;
+  right: 0;
+  transform: translate(-80%, 0);
+  font-weight: bold;
+  position: fixed;
+  a{
+    text-decoration: none;
+    color:  rgba(0, 128, 0,0.9);
+  }
+}
+
+.loader {
+  border: 4px solid #c5c3c3dc;
+  border-top: 4px solid rgb(17, 99, 0);
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  animation: spin 2s linear infinite;
+}

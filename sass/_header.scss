@@ -1,0 +1,74 @@
+header {
+    nav {
+      height: 60px;
+      padding: 0 34px;
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: wrap;
+        align-items: center;
+        font-size: 14px;
+      }
+      .menu {
+        border: 1px solid black;
+        padding: 6px 12px;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        
+        &::before {
+          content: "";
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-image: url("../../assets/icon-menu.png");
+          background-size: cover;
+          margin-right: 6px;
+        }
+      }
+      .logo {
+        background-image: url("../assets/internetbanking.png");
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: 90%;
+        width: 120px;
+        height: 70px;
+      }
+      .user_info {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        &__name {
+          border: 1px solid black;
+          padding: 6px 12px;
+          border-radius: 30px;
+          cursor: pointer;
+          &::after {
+            content: ">";
+            padding: 6px;
+          }
+        }
+      }
+      .logout {
+        display: block;
+        width: 28px;
+        height: 28px;
+        background-image: url("../assets/icon-logout.png");
+        background-size: cover;
+        margin-left: 12px;
+      }
+    }
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    header{
+      nav{
+        padding: 0 12px;
+        .nav-container{
+          justify-content: space-evenly;
+          gap: 6px;
+        }
+      }
+    }
+  }
